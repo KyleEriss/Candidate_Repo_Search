@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+    <h1>GitHub Repository List Search</h1>
+
+    <form class="formClass">
+        <label for="repoList">Enter GitHub user handle to generate list of repos</label><br>
+        <div class="inputBox">
+            <input type="text" id="repoList" name="repoList" placeholder="Github handle" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Github handle'"><br>
+        </div>
+        <input type="submit" id="repoList" value="Submit">
+    </form>
+
+    <main>
+        <ul class="results hidden">
+            <div class="results-list">
+            </div>
+        </ul>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
